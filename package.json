@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Node.js Onion Redis distributed mutex",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node start.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vitche/nodejs-onion-redis-mutex.git"

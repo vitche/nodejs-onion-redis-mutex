@@ -14,6 +14,7 @@ module.exports = {
                 mutexService.provide("Lock", (arguments, next) => {
                     const name = arguments.name;
                     const key = arguments.key;
+                    console.log(`${process.env.ONION_REDIS_NAMESPACE}.Mutex.Lock("${name}", "${key}")`);
                     if (name && key) {
                         if (instances["name"] === key) {
                             // Locked by the same instance (reentrancy)
@@ -36,6 +37,7 @@ module.exports = {
                 mutexService.provide("Unlock", (arguments, next) => {
                     const name = arguments.name;
                     const key = arguments.key;
+                    console.log(`${process.env.ONION_REDIS_NAMESPACE}.Mutex.Unlock("${name}", "${key}")`);
                     if (name && key) {
                         if (instances["name"] === key) {
                             // Unlocked by the same instance
