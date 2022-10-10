@@ -4,7 +4,9 @@
   "description": "Node.js Onion Redis distributed mutex",
   "main": "main.js",
   "scripts": {
-    "start": "node start.js"
+    "start": "node start.js",
+    "docker:build": "docker build . -t vitche/nodejs-onion-redis-mutex",
+    "docker:run": "docker run -dit --name nodejs-onion-redis-mutex vitche/nodejs-onion-redis-mutex"
   },
   "repository": {
     "type": "git",
