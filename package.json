@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-onion-redis-mutex",
+  "version": "1.0.0",
+  "description": "Node.js Onion Redis distributed mutex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitche/nodejs-onion-redis-mutex.git"
+  },
+  "author": "Vitche Research Team Developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitche/nodejs-onion-redis-mutex/issues"
+  },
+  "homepage": "https://github.com/vitche/nodejs-onion-redis-mutex#readme"
+}
